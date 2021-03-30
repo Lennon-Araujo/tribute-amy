@@ -45,6 +45,10 @@ header nav li{
     text-align: center;
     margin-left: 5px;
 }
+.menu a:hover{
+    background-color: #5c5c5c;
+    color: #CCC;
+}
 .menu{
     display: flex;
     justify-content: space-between;
