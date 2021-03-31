@@ -28,30 +28,45 @@ header{
     width: 180px;
 }
 header nav ul{
-    display: inline-block;
+    display: flex;
     list-style: none;
 }
 header nav li{
-    display: inline-block;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 .menu a {
     display: block;
     text-decoration: none;
-    background-color: #CCCCCC ;
     color: #5c5c5c;
-    height: 20px;
+    min-height: 20px;
     padding: 10px;
     text-align: center;
     margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
 }
 .menu a:hover{
     background-color: #5c5c5c;
-    color: #CCC;
+    color: #FFFFFF;
 }
 .menu{
     display: flex;
     justify-content: space-between;
+}
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.mm-line{
+    height: 3px;
+    border-radius: 20%;
+    background-color: #5c5c5c;
 }
 .bg-page{
     background-image: url(../img/amy.jpg);
@@ -64,6 +79,7 @@ header nav li{
 #conteudo{
     display: flex;
     justify-content: center;
+    width: auto;
 }
 .container{
     width: 990px;
@@ -153,8 +169,36 @@ footer{
     font-size: 16px;
 }
 
-@media (max-width:600px) {
-    #conteudo{
+@media (max-width:660px) {
+    #conteudo,#refs{
         padding: 20px;
+        height: auto;
+    }
+    .organizador{
+        flex-direction: column;
+    }
+    .organizador div img{
+        height: auto;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .header{
+        height: auto;
+    }
+    .menu ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 5px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }

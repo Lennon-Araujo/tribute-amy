@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <title>Tribute - Amy Winehouse</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu ul").style.display == 'flex') {
+                    document.querySelector(".menu ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu ul").style.display = 'flex';
+                }
+            });
+        };
+    
+        </script>
+
 </head>
 <body>
     <header>
@@ -13,6 +27,12 @@
                 <a href="index.html"><img src="img/logo.jpg" alt=""></a>
             </div>
             <nav class="menu">
+                <div class="menuMobile">
+                    <div class="mm-line"></div>
+                    <div class="mm-line"></div>
+                    <div class="mm-line"></div>
+
+                </div>
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
                     <li><a href="#bio">BIO</a></li>
@@ -26,10 +46,9 @@
         <div class="bg-page">
         </div>
     </section>
-    <main id="bio">
     <section id="conteudo">
         <div class="container">
-            <div class="">
+            <div class="texto">
                 <h1>Amy Winehouse</h1>
                 <h2>foi um ícone de sua geração, e sua música está presente até hoje.</h2>
                 <p>
@@ -60,7 +79,6 @@
         </div>
 
     </section>
-    </main>
     <section id="refs">
         <div class="container">
             <div class="referencias">
