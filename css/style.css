@@ -175,6 +175,15 @@ footer{
     color: #CCCCCC;
     font-size: 16px;
 }
+footer a{
+
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+footer a:hover{
+    color: #000000;
+    background-color: #CCCCCC;
+}
 
 @media (max-width:660px) {
     #conteudo,#refs{
