@@ -1,5 +1,4 @@
-Este é o primeiro projeto para o GIT.
+Atividade site estático - Tributo Amy Winehouse
 
-Feito alteração para teste do commit -am
 
-Deu tudo certo!!!
+Link: https://lennon-araujo.github.io/tribute-amy/
